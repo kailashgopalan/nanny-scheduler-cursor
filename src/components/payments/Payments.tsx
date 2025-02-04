@@ -269,10 +269,10 @@ export const Payments: React.FC = () => {
               <Grid item xs={12} md={4}>
                 <Paper elevation={2} sx={{ p: 2, textAlign: 'center' }}>
                   <Typography variant="subtitle2" color="text.secondary">
-                    Total Owed
+                    Remaining Balance
                   </Typography>
                   <Typography variant="h4" sx={{ mt: 1 }}>
-                    ${summary.totalOwed.toFixed(2)}
+                    ${summary.remainingBalance.toFixed(2)}
                   </Typography>
                 </Paper>
               </Grid>
@@ -289,10 +289,10 @@ export const Payments: React.FC = () => {
               <Grid item xs={12} md={4}>
                 <Paper elevation={2} sx={{ p: 2, textAlign: 'center' }}>
                   <Typography variant="subtitle2" color="text.secondary">
-                    Remaining Balance
+                    Total Owed
                   </Typography>
                   <Typography variant="h4" sx={{ mt: 1 }}>
-                    ${summary.remainingBalance.toFixed(2)}
+                    ${summary.totalOwed.toFixed(2)}
                   </Typography>
                 </Paper>
               </Grid>
@@ -302,7 +302,7 @@ export const Payments: React.FC = () => {
               <Grid item xs={12} md={4}>
                 <Paper elevation={2} sx={{ p: 2, textAlign: 'center' }}>
                   <Typography variant="subtitle2" color="text.secondary">
-                    Pending to Receive
+                    Remaining Balance
                   </Typography>
                   <Typography variant="h4" sx={{ mt: 1 }}>
                     ${summary.remainingBalance.toFixed(2)}
